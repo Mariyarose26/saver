@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def default_url_options
-    { host: ENV["https://www.monosaver.com/"] }
+    { host: ENV["HEROKU_APP_NAME"] }
   end
 
   # set Signout
