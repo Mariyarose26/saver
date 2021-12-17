@@ -21,7 +21,7 @@ module Saver
     config.beginning_of_week = :sunday
 
     # Configuration for the application, engines, and railties goes here.
-    #
+    config.assets.initialize_on_precompile = true
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
