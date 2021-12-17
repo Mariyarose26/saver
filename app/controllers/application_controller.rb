@@ -21,6 +21,6 @@ class ApplicationController < ActionController::Base
   end
 
   def demo_user
-    @demo = User.find(5)
+    @demo = User.find_by(first_name: "demo")
   end
 end
